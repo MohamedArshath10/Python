@@ -16,16 +16,17 @@ print("Train size: ", x_train.shape)
 print("Test size: ", x_test.shape)
 
 # Decision tree
-print("Using decision tree ----->")
 from sklearn.tree import DecisionTreeClassifier
 model = DecisionTreeClassifier()
 model.fit(x_train, y_train)
 
 # Making Prediction
+print("Making Prediction ---->")
 y_pred = model.predict(x_test)
 print(y_pred[:5])
 
 # Evaluation Metrics
+print("Final Evaluation ---->")
 from sklearn.metrics import accuracy_score ,confusion_matrix, classification_report
 print("Accuracy:", accuracy_score(y_test, y_pred))
 print("Confusion Matrix \n",  confusion_matrix(y_test, y_pred))
