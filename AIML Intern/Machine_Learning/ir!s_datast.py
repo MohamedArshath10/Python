@@ -14,3 +14,19 @@ y = df['target']
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.3, random_state=42)
 print("Train size: ", x_train.shape)
 print("Test size: ", x_test.shape)
+
+# Decision tree
+print("Using decision tree ----->")
+from sklearn.tree import DecisionTreeClassifier
+model = DecisionTreeClassifier()
+model.fit(x_train, y_train)
+
+# Making Prediction
+y_pred = model.predict(x_test)
+print(y_pred[:5])
+
+# Evaluation Metrics
+from sklearn.metrics import accuracy_score ,confusion_matrix, classification_report
+print("Accuracy:", accuracy_score(y_test, y_pred))
+print("Confusion Matrix \n",  confusion_matrix(y_test, y_pred))
+print("Classification Report \n", classification_report(y_test, y_pred))
