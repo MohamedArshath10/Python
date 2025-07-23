@@ -2,9 +2,8 @@ from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 import pandas as pd
 
-iris = load_iris()
-df = pd.DataFrame(iris.data, columns=iris.feature_names)
-df['target'] = iris.target
+# iris = load_iris()
+df = pd.read_csv("IRIS.csv")
 print(df.head())
 
 # Splitting data
