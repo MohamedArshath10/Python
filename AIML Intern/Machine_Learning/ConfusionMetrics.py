@@ -8,14 +8,10 @@ y_pred = [1, 0, 1, 0, 0, 1, 1]
 
 # Generate confusion matrix
 cm = confusion_matrix(y_true, y_pred)
-
-print("Confusion Matrix:")
+# tp,fp,tn,fn = cm
+# print("True Positives:", tp)
+# print("False Positives:", fp)
+# print("True Negatives:", tn)
+# print("False Negatives:", fn)
 print(cm)
 
-# TP = 3
-#
-# TN = 2
-#
-# FP = 1
-#
-# FN = 1
