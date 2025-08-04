@@ -1,6 +1,9 @@
-def reverse_str(stri):
-    a = stri[::-1]
-    str2 = list(a)
-    print(str2)
+def reverse_str(s):
+    left, right = 0, len(s) - 1
+    while left < right:
+        s[left], s[right] = s[right], s[left]
+        left +=1
+        right -=1
+    print(s)
 s = ["h", "e", "l", "l", "o"]
 reverse_str(s)
