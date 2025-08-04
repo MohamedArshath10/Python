@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
 
-# Display plots inline (for Jupyter/Colab)
+# Display plots inline 
 # %matplotlib inline
 # Generate a daily date range
 date_range = pd.date_range(start='2023-01-01', end='2023-06-30', freq='D')
