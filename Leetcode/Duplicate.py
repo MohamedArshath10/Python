@@ -10,6 +10,6 @@ def duplicate(nums):
             nums.pop()
             right -= 1
     new_num.reverse()
-    return new_num
+    
 num = [1,1,2,3,3,4,5,5]
-print(duplicate(num))
+duplicate(num)
