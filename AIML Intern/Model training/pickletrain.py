@@ -18,5 +18,6 @@ with open("model_pickle.pkl", "wb") as file:
 with open("model_pickle.pkl", "rb") as file:
     loaded_model = pickle.load(file)
 
+
 # Test
 print(loaded_model.predict([X[0]]))
